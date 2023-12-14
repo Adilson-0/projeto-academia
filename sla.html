@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAR-MAX</title>
+    <link rel="shortcut icon" href="images/coracao.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="setInterval('atualizar()', 500)">
+    <header style="margin-right: 0.1px;" class="row align-items-center justify-content-center">
+        <div class="col col-5 col-md-2" style="text-align: center;">
+            <abbr title="Aqui você encontra as melhores ofertas!"><img id="logo" src="images/FAR-MAX_logo1-removebg-preview_cropped.png" alt="logo"></abbr>
+        </div>
+
+        <div class="col col-1 col-md-6 col-lg-8">
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col-4"><a href="#"><img class="rs" style="width: 70%; margin-top: 5px;" id="insta" src="images/174855.png" alt="insta"></a></div>
+                <div class="col-4"><a href="#"><img class="rs" style="width: 70%; margin-top: 5px;" id="face" src="images/Facebook-logo-blue-circle-large-white-f.png" alt="insta"></a></div>
+                <div class="col-4"><a href="#"><img class="rs" style="width: 70%; margin-top: 5px;" id="yt" src="images/youtube.png" alt="insta"></a></div>
+            </div>
+        </div>
+    </header>
+    <div id="seta_menu" style="text-align: center;" class="row d-flex justify-content-center">
+        <img style="width: 2%;" src="images/Vector-Arrow-Down-PNG-Image.png" alt="seta">
+    </div>
+    <nav id="menu_hor" class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="#"><button class="btn-secondary" id="lojas"><p class="p_button" id="p_button1">Lojas</p></button></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="index.html"><button class="btn-secondary" id="produtos"><p class="p_button" id="p_button2">Início</p></button></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="contato.html"><button class="btn-secondary" id="produtos"><p class="p_button" id="p_button2">Contato</p></button></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="login.html"><button class="btn-secondary" id ="login"><p class="p_button" id="p_button3">Login</p></button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container-fluid" style="padding: 0;" id="carous">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img style="size: 15% 15%;" class="img-fluid" src="images/far-maxv4.png" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="images/fraldas-v4.png" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid" src="images/remédios-v4.png" alt="Terceiro Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div id="opening" class="row align-items-center">
+            <div class="col">
+
+                <div id="bg-card1-op">
+                    <div class="cards-op" id="card1-op">
+                        <h2>Melhores Ofertas</h2>
+                        <p style="font-size: 18px;">Aqui você encontra o medicamento ideal pelo menor preço!</p>
+                    </div>
+                </div>
+
+                <div id="bg-card2-op">
+                    <div class="cards-op" id="card2-op">
+                        <h2>Faça seu login</h2>
+                        <p style="font-size: 18px;">Faça o login em nosso site para ficar por dentro de futuras ofertas e promoções da rede Far-Max!</p>
+                        <a href="login.html"><button class="button-card-op" id="button1-card-op">Fazer login agora</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" style="margin-top: 10%;">
+
+                <div id="bg-card3-op">
+                    <div class="cards-op" id="card3-op">
+                        <h2>Ótimo atendimento</h2>
+                        <p style="font-size: 18px;">Na Far-Max você é atendido com o respeito que um cliente merece!</p>
+                    </div>
+                </div>
+
+                <div id="bg-card4-op">
+                    <div class="cards-op" id="card4-op">
+                        <h2>Compre sem sair de casa</h2>
+                        <p style="font-size: 18px;">Além de nossas lojas físicas você também pode realizar compras pelo nosso site!</p>
+                        <a href="#"><button class="button-card-op" id="button2-card-op">Ir para sessão de produtos</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="quem-somos">
+        <h2 style="text-align: center;">Quem somos?</h2>
+        <hr>
+        <p id="qs-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet sed euismod nisi porta. Tristique senectus et netus et malesuada. Massa enim nec dui nunc. Lacus viverra vitae congue eu consequat ac felis donec. Gravida quis blandit turpis cursus in hac. At consectetur lorem donec massa sapien faucibus et molestie ac. Feugiat nisl pretium fusce id velit ut tortor. Diam donec adipiscing aliqua. Imperdiet sed euismod nisi porta. Tristique senectus et netus et malesuada. Massa enim nec dui nunc. Lacus viverra vitae congue eu consequat ac felis donec. Gravida quis blandit turpis cursus in hac. At consectetur lorem donec massa sapien faucibus et molestie ac. Feugiat nisl pretium fusce id velit ut tortor. Diam donec adipiscing tristique risus nec feugiat in. Lacus luctus accumsan tortor posuere ac ut. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque.
+            <br><br>
+            Viverra nam libero justo laoreet sit amet cursus sit. A scelerisque purus semper eget duis at tellus at. Porttitor lacus luctus accumsan tortor posuere ac. Enim ut sem viverra aliquet eget sit amet tellus cras. Massa id neque aliquam vestibulum morbi blandit cursus risus. Id venenatis a condimentum vitae sapien pellentesque habitant. Orci dapibus ultrices in iaculis. Massa enim nec dui nunc mattis. Adipiscing enim eu turpis egestas pretium aenean pharetra. Sit amet nisl suscipit adipiscing. aliqua. Imperdiet sed euismod nisi porta. Tristique senectus et netus et malesuada. Massa enim nec dui nunc. Lacus viverra vitae congue eu consequat ac felis donec. Gravida quis blandit turpis cursus in hac. At consectetur lorem donec massa sapien faucibus et molestie ac. Feugiat nisl pretium fusce id velit ut tortor. Diam donec adipiscing
+        </p>
+    </div>
+    <div class="container" style="margin-top: 5.5%;">
+        <div class="row align-items-center justify-content-start">
+            <div class="col">
+                <h2 style="text-align: center; font-weight: bold; color: rgb(255, 72, 102);">Conheça nossas lojas!</h2>
+                <br>
+                <p style="font-size: 20px; text-align: center;">Temos diversas lojas espalhadas pelo Brasil!<br>Entre na sessão de lojas para descobrir a mais próxima da sua residência.</p>
+                <a href="#" style="width: 100%;"><button id="button-lojas">Encontre uma loja</button></a>
+            </div>
+            <div class="col" id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.006718894811!2d-35.91837155007126!3d-7.240070894747974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aea0a6fab8137d%3A0x24f6e08262999405!2sIFPB%20Campina%20Grande!5e0!3m2!1spt-BR!2sbr!4v1671120337869!5m2!1spt-BR!2sbr" width="450" height="350" style="border:solid 2px rgb(255, 72, 102);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p style="font-weight: bold;">site desenvolvido por <a href="#">Adilson Fernandes</a></p>
+        <br>
+        <a class="link-footer" href="#">Faça seu login</a>
+        <a class="link-footer" href="#">Nossas lojas</a><br>
+        <a class="link-footer" href="#">Seção de produtos</a>
+    </footer>
+</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="resp.js"></script>
+</html>

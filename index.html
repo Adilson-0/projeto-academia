@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <link rel="shortcut icon" href="images/Workout-ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body style="background-color: #212121;" onload="setInterval('atualizar()', 5000)">
+    <div id="header" class="container-fluid">
+        <div style="flex-grow: 1; width: min-content;" id="div-menu">
+            <img id="op" style="width: 20%;" src="images/menu-icon-laranja.png" alt="menu">
+        </div>
+        <div style="flex-grow: 2; margin: auto; text-align: center;">
+            <img class="rounded-circle" id="logo" src="images/Workout-removebg-preview.png" alt="logo">
+            <input id="inp" type="text" placeholder="pesquise um produto">
+            <button id="button-inp">pesquisar</button>
+        </div>
+        <div style="flex-grow: 1; flex-basis: 1%; text-align: right;">
+            <a href="login.html"><img id="login-icon" src="images/user.png" alt="login"></a>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalcontato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header" style="background-color: #212121;">
+                <h3 class="modal-title" id="exampleModalLabel" style="text-align: center; color: rgb(232, 121, 47);"><strong>Contatos</strong></h5>
+            </div>
+            <div class="modal-body" style="text-align: center; background-color: #212121; color: white;">
+                <p><span style="font-weight: bold;">telefone:</span> (83) 0000-0000</p>
+                <br>
+                <p><span style="font-weight: bold;">whatsapp:</span> (83) 0000-0000</p>
+                <br>
+                <p><span style="font-weight: bold;">e-mail:</span> workout.academia@gmail.com</p>
+            </div>
+            <div class="modal-footer" style="background-color: #212121;">
+                <button id="button-modal" type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    <div id="menu">
+        <h2 id="title_op"><strong>OPÇÕES</strong></h2>
+        <hr>
+        <div id="opcoes_alt">
+            <p id="button1" class="op" data-toggle="modal" data-target="#modalcontato">contatos</p>
+            <br>
+            <p id="button3" class="op"><a style="text-decoration: none;" id="op_link" href="produtos.html">produtos</a></p>
+            <p id="button4" class="op"><a style="text-decoration: none;" id="op_link" href="#hist">quem somos?</a></p>
+        </div>
+    </div>
+
+    <div id="intro">
+        <div id="intro_text">
+            <h2 style="margin-top: 0;;" id="title_intro">BEM VINDO...</h2>
+            <p id="text_intro">Transforme seu potencial em força. Bem-vindo à <strong>WORKOUT</strong>, onde cada movimento é uma conquista, e cada suor é um passo em direção ao seu melhor eu. Junte-se a nós e desafie seus limites, esculpa seu corpo e energize sua mente. Sua jornada de bem-estar começa aqui.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="opening" class="row align-items-center">
+            <div class="col">
+
+                <div id="bg-card1-op">
+                    <div class="cards-op" id="card1-op">
+                        <h2>Melhores Ofertas</h2>
+                        <p style="font-size: 18px;">Oferecemos qualidade, comprometimento e, é claro, ótimos preços para ajudar você a alcançar seus objetivos de forma acessível!</p>
+                    </div>
+                </div>
+
+                <div id="bg-card2-op">
+                    <div class="cards-op" id="card2-op" style="width: 100%;">
+                        <h2>Estamos perto de você</h2>
+                        <p style="font-size: 18px;">Nossas academias estão espalhadas pela cidade, oferecendo a você várias opções para se exercitar, se superar e alcançar seus objetivos de forma conveniente!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" style="margin-top: 10%;">
+
+                <div id="bg-card3-op">
+                    <div class="cards-op" id="card3-op" style="width: 100%;">
+                        <h2>Ótimo atendimento</h2>
+                        <p style="font-size: 18px;">Conte com o suporte especializado do nosso Personal Trainer para personalizar seu treino e alcançar resultados eficientes!</p>
+                    </div>
+                </div>
+
+                <div id="bg-card4-op">
+                    <div class="cards-op" id="card4-op">
+                        <h2>Ótimos equipamentos</h2>
+                        <p style="font-size: 18px;">Investimos nos melhores equipamentos para oferecer a você uma experiência de treino excepcional. Potencialize seus resultados com tecnologia de ponta e alcance seus objetivos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hist" class="container-fluid">
+        <div id="text-hist">
+            <h2 style="color: rgb(232, 121, 47);">Um pouco de nossa origem...</h2>
+            <hr>
+            <p style="font-size: 18px;">Há muitos anos, em um pequeno vilarejo à beira de uma floresta mágica, nasceu a inspiração para a nossa academia. Conta-se que um sábio local, apaixonado por saúde e bem-estar, descobriu os segredos ancestrais de uma vida equilibrada. Guiado por essa sabedoria, ele fundou um espaço onde a comunidade podia se reunir para cultivar não apenas seus corpos, mas também suas mentes e espíritos. Essa visão cresceu e evoluiu, transformando-se na nossa amada academia, dedicada a nutrir o corpo, a mente e a alma de todos os que buscam uma vida saudável e plena.</p>
+        </div>
+    </div>
+
+    <footer>
+        <span>site desenvolvido por <a target="_blank" href="https://github.com/Adilson-0">Adilson Fernandes</a></span>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>

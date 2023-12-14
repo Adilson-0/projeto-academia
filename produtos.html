@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <link rel="shortcut icon" href="images/Workout-ico.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body style="background-color: #212121;">
+    <div id="header" class="container-fluid">
+        <div style="flex-grow: 1; width: min-content;" id="div-menu">
+            <img id="op" style="width: 20%;" src="images/menu-icon-laranja.png" alt="menu">
+        </div>
+        <div style="flex-grow: 2; margin: auto; text-align: center;">
+            <a href="index.html"><img class="rounded-circle" id="logo" src="images/Workout-removebg-preview.png" alt="logo"></a>
+            <input id="inp" type="text" placeholder="pesquise um produto">
+            <button id="button-inp">pesquisar</button>
+        </div>
+        <div style="flex-grow: 1; flex-basis: 1%; text-align: right;">
+            <a href="login.html"><img id="login-icon" src="images/user.png" alt="login"></a>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalcontato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header" style="background-color: #212121;">
+                <h3 class="modal-title" id="exampleModalLabel" style="text-align: center; color: rgb(232, 121, 47);"><strong>Contatos</strong></h5>
+            </div>
+            <div class="modal-body" style="text-align: center; background-color: #212121; color: white;">
+                <p><span style="font-weight: bold;">telefone:</span> (83) 0000-0000</p>
+                <br>
+                <p><span style="font-weight: bold;">whatsapp:</span> (83) 0000-0000</p>
+                <br>
+                <p><span style="font-weight: bold;">e-mail:</span> workout.academia@gmail.com</p>
+            </div>
+            <div class="modal-footer" style="background-color: #212121;">
+                <button id="button-modal" type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    <div id="menu">
+        <h2 id="title_op"><strong>OPÇÕES</strong></h2>
+        <hr>
+        <div id="opcoes_alt">
+            <p id="button1" class="opc" data-toggle="modal" data-target="#modalcontato">contatos</p>
+            <br>
+            <p id="button3" class="opc"><a style="text-decoration: none;" id="op_link" href="produtos.html">produtos</a></p>
+            <p id="button4" class="opc"><a style="text-decoration: none;" id="op_link" href="#hist">quem somos?</a></p>
+        </div>
+    </div>
+
+    <div id="back-prods">
+        <div style="background-color: rgba(41, 35, 32, 0.86);">
+            <div style="margin: 2%; margin-left: 0.9%;" class="btn-group dropdown">
+                <button id="filtro-btn" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Filtros
+                </button>
+                <div class="dropdown-menu">
+                    <button class="dropdown-item" type="button">Suplementos</button>
+                    <button class="dropdown-item" type="button">Roupas</button>
+                    <button class="dropdown-item" type="button">Artigos Esportivos</button>
+                </div>
+            </div>
+            <div id="div-prods" class="container" style="margin: auto; align-items: center; justify-content: center; padding-bottom: 5%;">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem; text-align: center; border: solid 2px rgb(255, 102, 0);">
+                            <figure style="text-align: center;"><img class="card-img-top w-75" src="images/wey.jpg" alt="Imagem de capa do card"></figure>
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">WHEY PROTEIN</h5>
+                                <p class="card-text">R$ 94,00</p>
+                                <a href="#"><button class="button_comp">comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem; text-align: center; border: solid 2px rgb(255, 102, 0);">
+                            <figure style="text-align: center;"><img class="card-img-top w-70 img-card" src="images/wey02.jpg" alt="Imagem de capa do card"></figure>
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">SIX PROTEIN</h5>
+                                <p class="card-text">R$ 50,00</p>
+                                <a href="#"><button class="button_comp">comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem; text-align: center; border: solid 2px rgb(255, 102, 0);">
+                            <figure style="text-align: center;"><img class="card-img-top w-75" src="images/BCAA.png" alt="Imagem de capa do card"></figure>
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">BCAA 2044</h5>
+                                <p class="card-text">R$ 48,27</p>
+                                <a href="#"><button class="button_comp">comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem; text-align: center; border: solid 2px rgb(255, 102, 0);">
+                            <figure style="text-align: center;"><img class="card-img-top w-75" src="images/creatina_resized.png" alt="Imagem de capa do card"></figure>
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">CREATINA HARDCORE</h5>
+                                <p class="card-text">R$ 60,00</p>
+                                <a href="#"><button class="button_comp">comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem; text-align: center; border: solid 2px rgb(255, 102, 0);">
+                            <figure style="text-align: center;"><img class="card-img-top w-75" src="images/glutamina_resized.png" alt="Imagem de capa do card"></figure>
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">GLUTAMINE ISOLATES</h5>
+                                <p class="card-text">R$ 39,40</p>
+                                <a href="#"><button class="button_comp">comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem; text-align: center; border: solid 2px rgb(255, 102, 0);">
+                            <figure style="text-align: center;"><img class="card-img-top w-75" src="images/CRISPBAR_resized.png" alt="Imagem de capa do card"></figure>
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">PROTEIN CRISP BAR</h5>
+                                <p class="card-text">R$ 95,79</p>
+                                <a href="#"><button class="button_comp">comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem; text-align: center; border: solid 2px rgb(255, 102, 0);">
+                            <figure style="text-align: center;"><img class="card-img-top w-75" src="images/barra03_resized.jpg" alt="Imagem de capa do card"></figure>
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">TOP WHEY BAR</h5>
+                                <p class="card-text">R$ 5,52</p>
+                                <a href="#"><button class="button_comp">comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem; text-align: center; border: solid 2px rgb(255, 102, 0);">
+                            <figure style="text-align: center;"><img class="card-img-top w-75" src="images/barra_cereal01.jpg" alt="Imagem de capa do card"></figure>
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">BARRA DE CEREAL NUTRY</h5>
+                                <p class="card-text">R$ 8,00</p>
+                                <a href="#"><button class="button_comp">comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem; text-align: center; border: solid 2px rgb(255, 102, 0);">
+                            <figure style="text-align: center;"><img class="card-img-top w-75" src="images/barra_cereal02.jpg" alt="Imagem de capa do card"></figure>
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">Dipirona</h5>
+                                <p class="card-text">R$ 8,00</p>
+                                <a href="#"><button class="button_comp">comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>site desenvolvido por <a target="_blank" href="https://github.com/Adilson-0">Adilson Fernandes</a></span>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
